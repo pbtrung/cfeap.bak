@@ -37,8 +37,8 @@ int cfeap_init(int argc, char *argv[])
     bstring input_fn = NULL, output_fn = NULL, log_fn = NULL;
     rc = cargs_parse(argc, argv, &input_fn, &output_fn, &log_fn);
     check_no_msg(rc == 0);
-    rc = flpr_file_exists(input_fn);
-    check(rc == 0, "Input file does not exist.");
+    //rc = flpr_file_exists(input_fn);
+    //check(rc == 0, "Input file does not exist.");
     //flpr_file_create(output_fn);
     //flpr_file_create(log_fn);
 
